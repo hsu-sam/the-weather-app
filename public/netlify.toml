@@ -1,0 +1,4 @@
+[[redirects]]
+from ="/*"
+to ="/inddex.html"
+status = 200

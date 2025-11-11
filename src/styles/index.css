@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf')
+    format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'DM Sans Italic';
+  src: url('/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf')
+    format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf')
+    format('truetype');
+  font-weight: 300 500 600 700;
+}
+/* 
+@theme {
+  --font-family-grotesque: 'Bricolage Grotesque', sans-serif;
+  --font-family-dm-sans: 'DM Sans', sans-serif;
+  --font-family-dm-sans-italic: 'DM Sans Italic', italic;
+} */
+
+:root {
+  --neutral-900: hsl(243, 96%, 9%);
+  --neutral-800: hsl(243, 27%, 20%);
+  --neutral-700: hsl(243, 23%, 24%);
+  --neutral-600: hsl(243, 23%, 30%);
+  --neutral-300: hsl(240, 6%, 70%);
+  --neutral-200: hsl(250, 6%, 84%);
+  --neutral-0: hsl(0, 0%, 100%);
+
+  /* Orange */
+
+  --orange-500: hsl(28, 100%, 52%);
+
+  /* Blue */
+
+  --blue-500: hsl(233, 67%, 56%);
+  --blue-700: hsl(248, 70%, 36%);
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  background-color: var(--neutral-900);
+  color: var(--neutral-0);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.test-font {
+  font-family: 'DM Sans Italic';
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+input {
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Bricolage Grotesque';
+}
+
+@media (width >= 48rem) {
+  body {
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
+  }
+}
+
+@media (width >= 64rem) {
+  body {
+    padding-inline: 7rem;
+    padding-block: 3rem 5rem;
+  }
+}
