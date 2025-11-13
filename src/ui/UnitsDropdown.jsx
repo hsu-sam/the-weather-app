@@ -28,11 +28,18 @@ function UnitsDRopdown() {
           alt=""
           width="13"
           height="8"
+          className={`transition-transform ${dropdownOpen ? 'rotate-180' : ''}`}
         />
       </Button>
 
       {dropdownOpen && (
-        <div className="absolute top-15 right-0 p-2 bg-(--neutral-800) border border-(--neutral-600) rounded-xl shadow-lg min-w-48 z-20">
+        <div
+          className={`absolute top-15 right-0 p-2 bg-(--neutral-800) border border-(--neutral-600) rounded-xl shadow-lg min-w-48 z-20 transition-all duration-700 ease-out   ${
+            dropdownOpen
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 -translate-y-2 pointer-events-none'
+          }`}
+        >
           <h4 className="text-base mb-3">Switch to Imperial</h4>
 
           <div>

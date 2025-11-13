@@ -84,7 +84,13 @@ function HourlyForecast() {
           </Button>
 
           {dropdownOpen && (
-            <div className="absolute top-12 right-0 p-2 bg-(--neutral-800) border border-(--neutral-600) rounded-xl shadow-lg min-w-48 z-20">
+            <div
+              className={`absolute top-12 right-0 p-2 bg-(--neutral-800) border border-(--neutral-600) rounded-xl shadow-lg min-w-48 z-20 transition-all duration-180 ease-out ${
+                dropdownOpen
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 -translate-y-2 pointer-events-none'
+              }`}
+            >
               {days.map((day, index) => (
                 <button
                   key={day.date}

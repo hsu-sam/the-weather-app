@@ -12,11 +12,11 @@ const Button = ({
   // Define variant styles
   const variantStyles = {
     primary:
-      'flex flex-row justify-center items-center gap-1.5 text-neutral-50  bg-blue-500 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-700 focus:bg-blue-700  focus:ring-offset-2',
+      'flex flex-row justify-center items-center gap-1.5 text-neutral-50  bg-blue-500 rounded-xl hover:bg-blue-700 active:scale-[0.97] transition-transform duration-150 ',
     secondary:
-      'flex flex-row justify-center items-center gap-1.5 bg-(--neutral-600) focus:outline-none focus:ring-1 focus:ring-neutral-700  ',
+      'flex flex-row justify-center items-center gap-1.5 bg-(--neutral-600) active:scale-[0.97] transition-transform duration-150',
     neutral:
-      'flex flex-row items-center gap-1.5 text-neutral-50 bg-(--neutral-800) rounded-lg focus:outline-none focus:ring-1 focus:ring-neutral-500 focus:ring-offset-2',
+      'flex flex-row items-center gap-1.5 text-neutral-50 bg-(--neutral-800) rounded-lg active:scale-[0.97] transition-transform duration-150 ',
   };
 
   // Define size styles
@@ -27,8 +27,7 @@ const Button = ({
   };
 
   // Combine styles
-  const baseStyles =
-    'font-medium rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
+  const baseStyles = 'font-medium rounded transition-colors duration-200';
 
   const disabledStyles = disabled
     ? 'opacity-50 cursor-not-allowed'
