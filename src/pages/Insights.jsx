@@ -9,7 +9,7 @@ import { IoIosArrowRoundBack } from 'react-icons/io';
 
 function Insights() {
   const { loading, error } = useWeather();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleBack = function () {
     navigate(-1);

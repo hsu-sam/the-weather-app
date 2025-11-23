@@ -56,6 +56,7 @@ export function WeatherProvider({ children }) {
         (err) => {
           setError('Location access denied. Please search for a location.');
           setLoading(false);
+          console.log(err.message);
         }
       );
     } else {

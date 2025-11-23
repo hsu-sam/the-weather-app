@@ -19,7 +19,7 @@ function Error() {
       <h1 className="text-5xl text-center">Something went wrong</h1>
 
       <p className="text-xl text-center">
-        We couldn't connent (API error). Please try again in few moments.
+        {"We couldn't connent (API error). Please try again in few moments."}
       </p>
 
       <Button variant="secondary" size="small" onClick={handleReload}>
